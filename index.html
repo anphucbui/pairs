@@ -1,23 +1,54 @@
 
+<!DOCTYPE html>
 <html>
   <title>
      Group 33 Pairing
   </title>
 
   <body>
-    <h1> Enter your name below: </h1>
+    <h1> Group 33's Super Sophisticated Pairing Finder </h1>
 
-  <script>
-  
-  </script>
+    <p id="output"></p>
+
+    <script>
+
+    function getAnimal() {
+      var name = document.getElementById("name").value.toLowerCase();
+      if (name == "mo" || name == "harmen") {
+        document.getElementById("output").innerHTML = "Hi, " + name.charAt(0).toUpperCase() + name.slice(1) + "! Your animal is: DUCK";
+      }
+      else if (name == "crystal" || name == "dylan") {
+        document.getElementById("output").innerHTML = "Hi, " + name.charAt(0).toUpperCase() + name.slice(1) + "! Your animal is: DOG";
+      }
+      else if (name == "sarah" || name == "heechan" || name == "iris") {
+        document.getElementById("output").innerHTML = "Hi, " + name.charAt(0).toUpperCase() + name.slice(1) + "! Your animal is: CAT";
+      }
+      else if (name == "justin" || name == "claudia") {
+        document.getElementById("output").innerHTML = "Hi, " + name.charAt(0).toUpperCase() + name.slice(1) + "! Your animal is: FISH";
+      }
+      else if (name == "kevin" || name == "sannidhi") {
+        document.getElementById("output").innerHTML = "Hi, " + name.charAt(0).toUpperCase() + name.slice(1) + "! Your animal is: ELEPHANT";
+      }
+      else if (name == parseInt(name)) {
+        document.getElementById("output").innerHTML = "Nice try! I'm super secure!";
+      }
+      else {
+        document.getElementById("output").innerHTML = "AYO " + name.charAt(0).toUpperCase() + name.slice(1) + "! YOU AIN'T IN MA GROUP!";
+      }
+    }
+    </script>
+
+    Name: <input type="text" id="name">
+    <button onclick="getAnimal()">Click me!</button>
 
   </body>
 
   <style>
     body {
-      background-color:green;
+      background-color:lightskyblue;
       color:#fff;
       text-align:center;
     }
   </style>
+
 </html>
